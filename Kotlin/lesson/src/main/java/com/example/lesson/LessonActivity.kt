@@ -49,7 +49,7 @@ class LessonActivity : AppCompatActivity(), BaseView<LessonPresenter>, Toolbar.O
         getPresenter().fetchData()
     }
 
-    fun showResult(lessons: List<Lesson>) {
+    internal fun showResult(lessons: List<Lesson>) {
         lessonAdapter.updateAndNotify(lessons)
         refreshLayout!!.isRefreshing = false
     }

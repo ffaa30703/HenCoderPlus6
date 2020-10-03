@@ -23,7 +23,7 @@ class LessonAdapter: RecyclerView.Adapter<LessonAdapter.LessonViewHolder>() {
      * 静态内部类
      */
     class LessonViewHolder internal constructor(itemView: View) : BaseViewHolder(itemView) {
-        fun onBind(lesson: Lesson) {
+        internal fun onBind(lesson: Lesson) {
             var date = lesson.date
             if (date == null) {
                 date = "日期待定"
@@ -55,7 +55,7 @@ class LessonAdapter: RecyclerView.Adapter<LessonAdapter.LessonViewHolder>() {
 
     private var list: List<Lesson> = ArrayList()
 
-    fun updateAndNotify(list: List<Lesson>) {
+    internal fun updateAndNotify(list: List<Lesson>) {
         this.list = list
         notifyDataSetChanged()
     }

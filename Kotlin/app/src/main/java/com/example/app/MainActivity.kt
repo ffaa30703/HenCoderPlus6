@@ -11,7 +11,6 @@ import com.example.app.widget.CodeView
 import com.example.core.utils.CacheUtils
 import com.example.core.utils.Utils
 import com.example.lesson.LessonActivity
-import com.example.lesson.entity.Lesson
 
 /**
  *
